@@ -10,6 +10,7 @@ import Tokenomics from './components/Tokenomics';
 import FAQ from './components/FAQ';
 import Community from './components/Community';
 import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Community />
         </main>
         <Footer />
+        <ScrollToTopButton />
       </div>
     </LanguageProvider>
   );
