@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate:icon": "node scripts/generate-icon.js"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +42,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
+    "sharp": "^0.34.4",
     "tailwindcss": "^3.4.17"
   }
 }
