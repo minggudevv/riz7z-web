@@ -49,9 +49,11 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-gradient-to-r from-r7z-blue to-r7z-red rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">R7Z</span>
-            </div>
+            <img 
+              src="/RIZ7Z.png" 
+              alt="R7Z Logo" 
+              className="w-8 h-8 rounded-lg"
+            />
             <span className="text-white font-bold text-xl">R7Z</span>
           </motion.div>
 

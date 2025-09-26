@@ -55,9 +55,11 @@ const Hero = () => {
             whileHover={{ scale: 1.1, rotate: 5 }}
             className="inline-block"
           >
-            <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-r from-r7z-blue to-r7z-red rounded-2xl flex items-center justify-center mx-auto mb-6 animate-glow">
-              <span className="text-white font-bold text-3xl sm:text-4xl">R7Z</span>
-            </div>
+            <img 
+              src="/RIZ7Z.png" 
+              alt="R7Z Logo" 
+              className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-6 animate-glow"
+            />
           </motion.div>
         </motion.div>
 

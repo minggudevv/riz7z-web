@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLanguage } from './LanguageContext';
 
 const TradingChart = () => {
   const { t } = useLanguage();
-  const [isLoaded, setIsLoaded] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -65,26 +64,17 @@ const TradingChart = () => {
             whileHover={{ scale: 1.02 }}
             className="relative overflow-hidden rounded-xl border border-r7z-blue/30 w-full max-w-2xl"
           >
-            <div className="relative w-full" style={{ paddingBottom: '80%' }}>
-              <iframe
+            <div className="flex justify-center p-4">
+              <iframe 
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
+                width="500" 
+                height="400"
                 src="https://www.dextools.io/widget-chart/en/bnb/pe-light/0xc638d263345c3faea3de3c6bd3957b1408ffec2b?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
-                className="absolute top-0 left-0 w-full h-full"
+                className="rounded-lg"
                 allowFullScreen
                 loading="lazy"
-                onLoad={() => setIsLoaded(true)}
               />
-              
-              {/* Loading overlay */}
-              {!isLoaded && (
-                <div className="absolute inset-0 bg-r7z-dark/80 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-8 h-8 border-2 border-r7z-blue border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
-                    <p className="text-white text-sm">Loading chart...</p>
-                  </div>
-                </div>
-              )}
             </div>
           </motion.div>
         </div>

@@ -30,9 +30,11 @@ const Footer = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-              <div className="w-10 h-10 bg-gradient-to-r from-r7z-blue to-r7z-red rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">R7Z</span>
-              </div>
+              <img 
+                src="/RIZ7Z.png" 
+                alt="R7Z Logo" 
+                className="w-10 h-10 rounded-lg"
+              />
               <span className="text-white font-bold text-2xl">R7Z</span>
             </motion.div>
             <p className="text-gray-300 text-sm leading-relaxed">
