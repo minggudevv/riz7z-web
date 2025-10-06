@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Developer Credit**: Added "MingguDev created with ☕" credit in footer
 - **LGPLv2.1 License**: Added GNU Lesser General Public License v2.1 for open source distribution
 - **Documentation**: Created comprehensive CHANGELOG.md and updated README.md with license information
+- **Docker Support**: Added complete Docker containerization with production and development configurations
 
 ### Changed
 - **Hero Section**: Updated main heading to display "RIZ7Z" with token symbol information
@@ -40,6 +41,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Code Organization**: Improved code structure and maintainability
 - **Z-index Management**: Proper z-index layering for footer and other components
 - **Responsive Design**: Enhanced mobile and desktop layout consistency
+- **Containerization**: Multi-stage Docker build with Nginx for production deployment
+- **Development Environment**: Docker Compose setup for both development and production environments
+- **Security Headers**: Added security headers and optimized Nginx configuration
+- **Health Monitoring**: Implemented health check endpoints for container monitoring
 
 ## [1.1.0] - 2025-10-6
 
