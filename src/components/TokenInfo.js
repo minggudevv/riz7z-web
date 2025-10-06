@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLanguage } from './LanguageContext';
+import { useNotification } from './NotificationContext';
 import TradingChart from './TradingChart';
 
 const TokenInfo = () => {
   const { t } = useLanguage();
+  const { showNotification } = useNotification();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -35,6 +37,15 @@ const TokenInfo = () => {
   };
 
   const tokenData = [
+    {
+      label: t('symbol'),
+      value: 'R7Z',
+      icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+      )
+    },
     {
       label: t('blockchain'),
       value: 'Binance Smart Chain (BSC)',
@@ -75,9 +86,14 @@ const TokenInfo = () => {
     }
   ];
 
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text);
-    // You could add a toast notification here
+  const copyToClipboard = async (text, label) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      showNotification(t('copySuccess'), 'success');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+      showNotification(t('copyError'), 'error');
+    }
   };
 
   return (
@@ -129,7 +145,7 @@ const TokenInfo = () => {
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        onClick={() => copyToClipboard(item.value)}
+                        onClick={() => copyToClipboard(item.value, item.label)}
                         className="text-r7z-blue hover:text-r7z-red transition-colors duration-200"
                         title="Copy to clipboard"
                       >

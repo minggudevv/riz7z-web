@@ -1,6 +1,10 @@
-# R7Z Crypto Landing Page
+# RIZ7Z Crypto Landing Page
 
-A modern, responsive landing page for the R7Z cryptocurrency project built with React and Tailwind CSS.
+A modern, responsive landing page for the RIZ7Z cryptocurrency project built with React and Tailwind CSS.
+
+## 📋 Changelog
+
+For detailed information about recent changes, updates, and new features, please see [CHANGELOG.md](./CHANGELOG.md).
 
 ## Features
 
@@ -10,12 +14,14 @@ A modern, responsive landing page for the R7Z cryptocurrency project built with 
 - 📱 **Mobile First** - Fully responsive design optimized for all devices
 - 🎭 **Smooth Animations** - Scroll reveal animations and hover effects using Framer Motion
 - 🎨 **Modern UI** - Flat design with gradient effects and glowing elements
+- 🔔 **Notification System** - Toast notifications for user interactions
+- 📋 **Copy to Clipboard** - Easy copying of token addresses and contract information
 
 ## Sections
 
-1. **Hero Section** - Logo, tagline, and community links
-2. **About R7Z** - Project description and key features
-3. **Token Information** - Blockchain details, supply, addresses, and PancakeSwap link
+1. **Hero Section** - Logo, tagline, token symbol, and community links
+2. **About RIZ7Z** - Project description and key features
+3. **Token Information** - Symbol, blockchain details, supply, addresses, and PancakeSwap link
 4. **Roadmap** - Project milestones and progress tracking
 5. **Tokenomics** - Coming soon placeholder
 6. **FAQ** - Frequently asked questions with expandable answers
@@ -63,20 +69,22 @@ A modern, responsive landing page for the R7Z cryptocurrency project built with 
 ```
 src/
 ├── components/
-│   ├── LanguageContext.js    # Language management
-│   ├── ParticleBackground.js # Animated background
-│   ├── Navbar.js            # Navigation bar
-│   ├── Hero.js              # Hero section
-│   ├── About.js             # About section
-│   ├── TokenInfo.js         # Token information
-│   ├── Roadmap.js           # Project roadmap
-│   ├── Tokenomics.js        # Tokenomics section
-│   ├── FAQ.js               # FAQ section
-│   ├── Community.js         # Community links
-│   └── Footer.js            # Footer
-├── App.js                   # Main app component
-├── index.js                 # App entry point
-└── index.css                # Global styles with Tailwind
+│   ├── LanguageContext.js      # Language management
+│   ├── NotificationContext.js  # Notification state management
+│   ├── Notification.js         # Toast notification component
+│   ├── ParticleBackground.js   # Animated background
+│   ├── Navbar.js              # Navigation bar
+│   ├── Hero.js                # Hero section
+│   ├── About.js               # About section
+│   ├── TokenInfo.js           # Token information
+│   ├── Roadmap.js             # Project roadmap
+│   ├── Tokenomics.js          # Tokenomics section
+│   ├── FAQ.js                 # FAQ section
+│   ├── Community.js           # Community links
+│   └── Footer.js              # Footer
+├── App.js                     # Main app component
+├── index.js                   # App entry point
+└── index.css                  # Global styles with Tailwind
 ```
 
 ## Customization
@@ -89,4 +97,30 @@ The project uses a custom color scheme defined in `tailwind.config.js`:
 
 ## License
 
-This project is private and proprietary to R7Z.
+This project is licensed under the **GNU Lesser General Public License v2.1 (LGPLv2.1)**.
+
+### What this means:
+- ✅ **Free to use** - You can use this code for any purpose
+- ✅ **Free to modify** - You can modify and customize the code
+- ✅ **Free to distribute** - You can share and redistribute the code
+- ✅ **Commercial use allowed** - You can use it in commercial projects
+- ✅ **Linking allowed** - You can link it with proprietary software
+
+### Requirements:
+- 📋 **Attribution** - You must include the original copyright notice
+- 📋 **License inclusion** - You must include a copy of the LGPLv2.1 license
+- 📋 **Source code** - If you distribute the library, you must provide source code
+
+For the complete license terms, see [LICENSE.md](./LICENSE.md).
+
+**Copyright © 2025 RIZ7Z - MingguDev**
+
+---
+
+## Recent Updates
+
+- **v1.2.0**: Enhanced branding with RIZ7Z name, added notification system, comprehensive translations, footer fixes, and LGPLv2.1 license
+- **v1.1.0**: Multi-language support (Indonesian/English)
+- **v1.0.0**: Initial release with core features
+
+For complete changelog, see [CHANGELOG.md](./CHANGELOG.md).

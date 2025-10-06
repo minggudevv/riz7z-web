@@ -54,7 +54,7 @@ const Navbar = () => {
               alt="R7Z Logo" 
               className="w-8 h-8 rounded-lg"
             />
-            <span className="text-white font-bold text-xl">R7Z</span>
+            <span className="text-white font-bold text-xl">RIZ7Z</span>
           </motion.div>
 
           {/* Desktop Navigation */}

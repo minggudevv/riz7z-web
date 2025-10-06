@@ -69,11 +69,15 @@ const Hero = () => {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
         >
           <span className="bg-gradient-to-r from-r7z-blue to-r7z-red bg-clip-text text-transparent">
-            R7Z
+            RIZ7Z
           </span>
           <br />
           <span className="text-2xl sm:text-3xl lg:text-4xl font-normal text-gray-300">
             {t('tagline')}
+          </span>
+          <br />
+          <span className="text-lg sm:text-xl font-medium text-r7z-blue">
+            {t('symbol')}: R7Z
           </span>
         </motion.h1>
 
