@@ -70,7 +70,7 @@ const Community = () => {
   ];
 
   return (
-    <section id="community" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-r7z-darker to-r7z-dark">
+    <section id="community" className="py-20 px-4 sm:px-6 lg:px-8 pb-32 bg-gradient-to-b from-r7z-darker to-r7z-dark">
       <div className="max-w-7xl mx-auto">
         <motion.div
           ref={ref}

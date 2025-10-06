@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-t from-r7z-darker to-r7z-dark border-t border-r7z-blue/20">
+    <footer className="relative z-20 bg-gradient-to-t from-r7z-darker to-r7z-dark border-t border-r7z-blue/20 mt-20 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
@@ -111,6 +111,8 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-4 text-sm text-gray-400">
               <span>{t('builtWithLove')}</span>
+              <span>•</span>
+              <span>MingguDev created with ☕</span>
             </div>
           </div>
         </div>

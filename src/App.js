@@ -18,10 +18,10 @@ const AppContent = () => {
   const { notification, hideNotification } = useNotification();
 
   return (
-    <div className="App min-h-screen bg-r7z-darker">
+    <div className="App min-h-screen bg-r7z-darker flex flex-col">
       <ParticleBackground />
       <Navbar />
-      <main className="relative z-10">
+      <main className="relative z-10 flex-1">
         <Hero />
         <About />
         <TokenInfo />
