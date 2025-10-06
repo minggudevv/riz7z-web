@@ -35,16 +35,16 @@ const Footer = () => {
                 alt="R7Z Logo" 
                 className="w-10 h-10 rounded-lg"
               />
-              <span className="text-white font-bold text-2xl">R7Z</span>
+              <span className="text-white font-bold text-2xl">RIZ7Z</span>
             </motion.div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              A community-driven cryptocurrency project built on Binance Smart Chain with a focus on long-term growth and development.
+              {t('aboutDesc')}
             </p>
           </div>
 
           {/* Navigation */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Quick Links</h3>
+            <h3 className="text-white font-semibold text-lg">{t('quickLinks')}</h3>
             <nav className="space-y-2">
               {navItems.map((item) => (
                 <motion.button
@@ -61,7 +61,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Connect With Us</h3>
+            <h3 className="text-white font-semibold text-lg">{t('connectWithUs')}</h3>
             <div className="flex space-x-4">
               <motion.a
                 href="https://x.com/riz7_z97215"
@@ -107,10 +107,10 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-r7z-blue/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              {t('footer')}
+              Copyright © 2025 RIZ7Z - R7Z Token
             </p>
             <div className="flex items-center space-x-4 text-sm text-gray-400">
-              <span>Built with ❤️ for the community</span>
+              <span>{t('builtWithLove')}</span>
             </div>
           </div>
         </div>
