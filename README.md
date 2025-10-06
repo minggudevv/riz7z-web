@@ -41,8 +41,11 @@ For detailed information about recent changes, updates, and new features, please
 
 - Node.js (v14 or higher)
 - npm or yarn
+- Docker (optional, for containerized deployment)
 
 ### Installation
+
+#### Option 1: Traditional Installation
 
 1. Clone the repository
 2. Install dependencies:
@@ -56,6 +59,44 @@ For detailed information about recent changes, updates, and new features, please
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+#### Option 2: Docker Installation
+
+1. Clone the repository
+2. Build and run with Docker Compose:
+   ```bash
+   # Production build
+   docker-compose up --build
+   
+   # Development mode
+   docker-compose --profile dev up --build
+   ```
+
+3. Access the application:
+   - Production: [http://localhost:3000](http://localhost:3000)
+   - Development: [http://localhost:3001](http://localhost:3001)
+
+#### Docker Commands
+
+```bash
+# Build production image
+docker build -t riz7z-web .
+
+# Run production container
+docker run -p 3000:80 riz7z-web
+
+# Build development image
+docker build -f Dockerfile.dev -t riz7z-web-dev .
+
+# Run development container
+docker run -p 3001:3000 -v $(pwd):/app -v /app/node_modules riz7z-web-dev
+
+# Stop all containers
+docker-compose down
+
+# View logs
+docker-compose logs -f
+```
 
 ## Available Scripts
 
