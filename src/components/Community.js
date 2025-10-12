@@ -35,7 +35,7 @@ const Community = () => {
 
   const socialLinks = [
     {
-      name: 'X (Twitter)',
+      name: t('xTwitter'),
       url: 'https://x.com/riz7_z97215',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ const Community = () => {
       hoverColor: 'hover:from-blue-500 hover:to-blue-700'
     },
     {
-      name: 'Telegram',
+      name: t('telegram'),
       url: 'https://t.me/riz7zz',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ const Community = () => {
       hoverColor: 'hover:from-blue-600 hover:to-blue-800'
     },
     {
-      name: 'Email',
+      name: t('email'),
       url: 'mailto:contact@rgapk.com',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,7 +92,7 @@ const Community = () => {
             variants={itemVariants}
             className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            Join our growing community and stay updated with the latest news and developments.
+            {t('communityDescription')}
           </motion.p>
         </motion.div>
 
@@ -149,10 +149,10 @@ const Community = () => {
             className="inline-block p-8 bg-gradient-to-br from-r7z-dark/50 to-r7z-darker/50 rounded-2xl border border-r7z-blue/20 hover:border-r7z-blue/40 transition-all duration-300"
           >
             <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to join the R7Z community?
+              {t('readyToJoin')}
             </h3>
             <p className="text-gray-300 mb-6">
-              Connect with us on social media and be part of our journey!
+              {t('connectSocial')}
             </p>
             <motion.div
               animate={{ scale: [1, 1.05, 1] }}
