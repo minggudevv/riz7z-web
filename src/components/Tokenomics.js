@@ -80,7 +80,7 @@ const Tokenomics = () => {
                 </h3>
                 
                 <p className="text-xl text-gray-300 mb-8">
-                  Detailed tokenomics information will be released soon. Stay tuned for updates!
+                  {t('tokenomicsDesc')}
                 </p>
 
                 <motion.div
