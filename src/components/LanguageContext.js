@@ -95,7 +95,30 @@ export const LanguageProvider = ({ children }) => {
         roadmap: "Roadmap",
         faq: "FAQ",
         community: "Community"
-      }
+      },
+      mintTokens: "Mint Tokens",
+      burnTokens: "Burn Tokens",
+      mintTokensDesc: "New tokens can be minted when price is too high to increase supply and stabilize the market",
+      burnTokensDesc: "Existing tokens can be burned when price is too low to reduce supply and support price recovery",
+      roadmapDescription: {
+        launch: "Project launch and initial community building",
+        growingCommunity: "Expanding community reach and engagement",
+        listing: "Getting listed on major DEX tracking platforms",
+        comingSoon: "Exciting new features and partnerships coming soon"
+      },
+      statusText: {
+        completed: "Completed",
+        ongoing: "Ongoing",
+        upcoming: "Coming Soon",
+        pending: "Pending"
+      },
+      communityDescription: "Join our growing community and stay updated with the latest news and developments.",
+      readyToJoin: "Ready to join the R7Z community?",
+      connectSocial: "Connect with us on social media and be part of our journey!",
+      tokenomicsDesc: "Detailed tokenomics information will be released soon. Stay tuned for updates!",
+      xTwitter: "X (Twitter)",
+      telegram: "Telegram",
+      email: "Email"
     },
     id: {
       tagline: "RIZ7Z, koin untuk jangka panjang",
@@ -116,7 +139,7 @@ export const LanguageProvider = ({ children }) => {
       liveTradingDesc: "Chart harga real-time dan data trading yang didukung oleh DEXTools",
       viewOnDEXTools: "Lihat di DEXTools",
       roadmap: "Roadmap",
-      launch: "Launch",
+      launch: "Peluncuran",
       growingCommunity: "Pertumbuhan Komunitas",
       listing: "Listing di DEX",
       comingSoon: "Segera Hadir",
@@ -167,7 +190,30 @@ export const LanguageProvider = ({ children }) => {
         roadmap: "Roadmap",
         faq: "FAQ",
         community: "Komunitas"
-      }
+      },
+      mintTokens: "Mint Token",
+      burnTokens: "Bakar Token",
+      mintTokensDesc: "Token baru dapat di-mint ketika harga terlalu tinggi untuk meningkatkan pasokan dan menstabilkan pasar",
+      burnTokensDesc: "Token yang ada dapat dibakar ketika harga terlalu rendah untuk mengurangi pasokan dan mendukung pemulihan harga",
+      roadmapDescription: {
+        launch: "Peluncuran proyek dan membangun komunitas awal",
+        growingCommunity: "Memperluas jangkauan dan keterlibatan komunitas",
+        listing: "Listing di platform tracking DEX utama",
+        comingSoon: "Fitur baru yang menarik dan kemitraan akan segera hadir"
+      },
+      statusText: {
+        completed: "Selesai",
+        ongoing: "Berlangsung",
+        upcoming: "Segera Hadir",
+        pending: "Menunggu"
+      },
+      communityDescription: "Bergabunglah dengan komunitas kami yang terus berkembang dan tetap update dengan berita dan perkembangan terbaru.",
+      readyToJoin: "Siap bergabung dengan komunitas R7Z?",
+      connectSocial: "Terhubung dengan kami di media sosial dan jadilah bagian dari perjalanan kami!",
+      tokenomicsDesc: "Informasi tokenomics terperinci akan segera dirilis. Nantikan update-nya!",
+      xTwitter: "X (Twitter)",
+      telegram: "Telegram",
+      email: "Email"
     }
   };
 

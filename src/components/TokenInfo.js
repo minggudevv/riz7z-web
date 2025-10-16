@@ -200,13 +200,13 @@ const TokenInfo = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
                   </div>
-                  <h5 className="text-lg font-semibold text-white">Mint Tokens</h5>
+                  <h5 className="text-lg font-semibold text-white">{t('mintTokens')}</h5>
                 </div>
                 <p className="text-gray-300 text-sm">
-                  New tokens can be minted when price is too high to increase supply and stabilize the market
+                  {t('mintTokensDesc')}
                 </p>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.02, y: -2 }}
                 className="p-6 bg-gradient-to-br from-r7z-red/10 to-r7z-blue/10 rounded-xl border border-r7z-red/20"
@@ -217,10 +217,10 @@ const TokenInfo = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 12H6" />
                     </svg>
                   </div>
-                  <h5 className="text-lg font-semibold text-white">Burn Tokens</h5>
+                  <h5 className="text-lg font-semibold text-white">{t('burnTokens')}</h5>
                 </div>
                 <p className="text-gray-300 text-sm">
-                  Existing tokens can be burned when price is too low to reduce supply and support price recovery
+                  {t('burnTokensDesc')}
                 </p>
               </motion.div>
             </div>

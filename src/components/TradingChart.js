@@ -64,14 +64,12 @@ const TradingChart = () => {
             whileHover={{ scale: 1.02 }}
             className="relative overflow-hidden rounded-xl border border-r7z-blue/30 w-full max-w-2xl"
           >
-            <div className="flex justify-center p-4">
-              <iframe 
+            <div className="relative w-full" style={{ paddingBottom: '80%' }}>
+              <iframe
                 id="dextools-widget"
                 title="DEXTools Trading Chart"
-                width="500" 
-                height="400"
                 src="https://www.dextools.io/widget-chart/en/bnb/pe-light/0xc638d263345c3faea3de3c6bd3957b1408ffec2b?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
-                className="rounded-lg"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
                 allowFullScreen
                 loading="lazy"
               />
